@@ -12,6 +12,11 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        if (LoginInfo.logged_in){
+            Intent(this, DashboardActivity :: class.java).apply {
+                startActivity(this)
+            }
+        }
 
         var signUpBtn = findViewById<Button>(R.id.tbtn_signup)
 

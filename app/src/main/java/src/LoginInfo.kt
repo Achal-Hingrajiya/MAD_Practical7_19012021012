@@ -11,7 +11,7 @@ class LoginInfo {
         var logged_in : Boolean = false;
 
 
-        fun register(full_name : String, phone_number : String, city : String, email : String, password : String){
+        fun signUp(full_name : String, phone_number : String, city : String, email : String, password : String){
             this.full_name = full_name
             this.phone_number = phone_number
             this.city = city
